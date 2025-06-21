@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <title>Phillip Wisniewski</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    </head>
+    
+    <body>
+    
+    <div id="vanta-globe">
+        <div class="headingText">
+            <h1>Phillip Wisniewski</h1>
+            <p>QA Engineer | Aspiring Software Engineer</p>
+        </div>
+    </div>
+
+    <!--I used this script for the 3d animated wallpaper from Vanta.js.com-->
+    <script>
+            window.addEventListener(`DOMContentLoaded`, () => {
+            VANTA.GLOBE({
+                el: "#vanta-globe",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: true,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.0,
+                scaleMobile: 1.0,
+                backgroundColor: 0x0,
+                color: 0xff3f81,
+                color2: 0xffffff,
+                size: 0.7,
+                spacing: 15,
+                points: 10,
+                maxDistance: 20,
+                showDots: true,
+                backgroundAlpha: 1
+            });
+        });
+  </script>
+
+    <!--This is the nav bar-->
+   <nav class="navBar">
+        <ul>
+            <li><a href="#jumpToAboutMe">About Me</a></li>
+            <li><a href="#jumpToProjects">Projects</a></li>
+            <li><a href="#jumpToContactMe">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!--This is the about me section-->
+    <div id="jumpToAboutMe" class="aboutMe">
+        <div class="aboutText">
+            <h2 id="about" class="aboutMeHeader">About Me</h2>
+                <p class="bio">I’m a QA Engineer and aspiring Software Engineer with hands-on experience in HTML, CSS, JavaScript, 
+                    Cypress, Git, and Node.js. With an expected graduation date of April 2026, I’m excited to merge my expertise in 
+                    quality assurance with the software development skills I’m currently mastering. My goal is to build, test, and 
+                    maintain high-quality software that delivers real value to users.
+                </p>
+        </div>
+        <div class="profilePic">
+            <img src="images/me.jpeg" alt="profile picture">
+        </div>
+    </div>
+
+    <!--This is the projects section-->
+     <div id="jumpToProjects" class="project">
+        <h2>Projects</h2>
+            <p>Click the picture to check out the repository!</p>
+            <div class="scrollContainer">
+                <div class="projectPicture">
+                    <div class="projectCard">
+                        <a href="https://github.com/phillsatellite/calculatorApp" target="_blank" rel="Github Repository">
+                            <img src="images/calculatorProject.png" alt="A picture of a calculator">
+                        </a>
+                    </div>
+
+                    <div class="projectCard">
+                        <img src="images/Screenshot 2025-06-20 at 6.21.52 PM.png" alt="A picture of a calculator">
+                    </div>
+
+                    <div class="projectCard">
+                        <img src="images/Screenshot 2025-06-20 at 6.21.52 PM.png" alt="A picture of a calculator"> 
+                    </div>
+
+                    <div class="projectCard"> 
+                        <img src="images/Screenshot 2025-06-20 at 6.21.52 PM.png" alt="A picture of a calculator">
+                    </div> 
+
+                    <div class="projectCard">
+                        <img src="images/Screenshot 2025-06-20 at 6.21.52 PM.png" alt="A picture of a calculator">     
+                    </div>         
+                </div>        
+            </div>       
+    </div>
+
+    <!--This is the Contact Me section-->
+    <div id="jumpToContactMe" class="contactMe">
+       <h2>Contact Me</h2>
+        <p>Reach out and lets talk!</p>
+
+        <div class="contactLinkContainer">
+            <a href="https://github.com/phillsatellite" target="_blank" rel="Github account">
+                <img src="images/github_logo_icon_229278.webp" alt="Github Icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/phillip-wisniewski-9472aa224/" target="_blank" rel="LinkedIn account">
+                <img src="images/circle-linkedin-512.webp" alt="LinkedIn Icon">
+            </a>
+            
+            <a href="mailto:phillip.wisniewski10@gmail.com">
+                <img src="images/google-gmail-512.webp" alt="Gmail icon">
+            </button>
+
+        </div>
+    </div>
+</body>
+</html>
