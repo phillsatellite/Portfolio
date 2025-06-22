@@ -194,7 +194,7 @@ html, body {
 }
 
 .projectCard img {
-  width: 100%;
+  width: 108%;
   height: 200px;
   object-fit: cover;
   border: 1.5px solid rgb(225, 14, 102);
