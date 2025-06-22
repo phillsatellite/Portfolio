@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4em;
+    scroll-padding-top: 6em;
 }
 
 html, body {
@@ -24,7 +24,6 @@ html, body {
   z-index: 10;
 }
 
-/* TEXT STYLES */
 .headingText h1 {
   font-size: 4em;
   font-weight: 200;
@@ -105,6 +104,52 @@ html, body {
   width: 150px;
   object-fit: cover;
   border: 2px solid rgb(225, 14, 102);
+}
+
+/* SKILLS SECTION */
+#skillsSectoin {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em 2em 0 3em;
+}
+
+#skillsSection h2 {
+  font-size: 3em;
+  font-weight: 150;
+  white-space: nowrap;
+  text-align: right;
+  margin-right: 5em; 
+}
+
+.zigZag {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5vw; 
+  flex-wrap: nowrap;
+  padding: 2em 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.zigZag img {
+  width: 10vw; 
+  max-width: 100px;
+  min-width: 40px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 2px solid rgb(225, 14, 102);
+  object-fit: cover;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+
+.zigZag img:nth-child(odd) {
+  transform: translateY(-30%);
+}
+.zigZag img:nth-child(even) {
+  transform: translateY(30%);
 }
 
 /* PROJECT SECTION */
@@ -209,7 +254,7 @@ html, body {
   }
 
   .profilePic {
-    padding-right: 0;
+    padding-left: 2em;
   }
 
   .navBar ul {
@@ -217,5 +262,21 @@ html, body {
     justify-content: flex-end;
     font-size: 1em;
   }
+
+  #skillsSection {
+    justify-content: flex-end;
+    padding: 1.5em;
+  }
+
+  #skillsSection h2 {
+    font-size: 2em;
+  }
+    .zigZag img {
+    width: 12vw;
+  }
+  .zigZag {
+    gap: 3vw;
+  }
 }
+
 
