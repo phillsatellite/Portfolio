@@ -177,8 +177,7 @@ html, body {
 
 .scrollContainer {
   overflow-x: auto;
-  width: 100%;
-  padding: 1em 0;
+  width: 90%;
 }
 
 .projectPicture {
@@ -189,7 +188,7 @@ html, body {
 
 .projectCard {
   flex: 0 0 auto;
-  width: 90vw;
+  width: 80vw;
   max-width: 300px;
 }
 
